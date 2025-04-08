@@ -1,4 +1,9 @@
 fastapi
 httpx
 pytest
+pytest-asyncio
+anyio
+pydantic
 uvicorn
+pydantic-settings
+python-dotenv
