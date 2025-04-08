@@ -1,6 +1,6 @@
 name: Test Python App  
 
-on: [push]  # запуск при любом пуше
+on: [push]  
 
 jobs:
   ci:
@@ -8,7 +8,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4  #получаем код из репозитория
+        uses: actions/checkout@v4  # получаем код из репозитория
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -21,12 +21,10 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          pip install pytest
+          pip install pytest  
 
       - name: Run tests with pytest
         run: python -m pytest tests/
-
 
 
 
