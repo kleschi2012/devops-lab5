@@ -5,5 +5,5 @@ pydantic
 pydantic-settings
 httpx
 anyio
-pytest-asyncrio
+pytest-asyncio
 python-dotenv
